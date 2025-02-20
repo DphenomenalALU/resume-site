@@ -21,14 +21,11 @@ themeToggle.addEventListener('click', () => {
   const navToggle = document.querySelector('.nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
-  console.log({ navToggle, navLinks });
 
   navToggle.addEventListener('click', function () {
-    console.log({ navLinks, s: 'a' })
     navLinks.classList.toggle('active');
   });
 
-// Close mobile menu when clicking outside
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
